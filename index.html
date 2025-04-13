@@ -339,15 +339,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ssh-keygen" class="md-nav__link">
-    <span class="md-ellipsis">
-      ssh-keygen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#testing-in-javascript-python" class="md-nav__link">
     <span class="md-ellipsis">
       Testing in JavaScript &amp; Python
@@ -496,15 +487,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ssh-keygen" class="md-nav__link">
-    <span class="md-ellipsis">
-      ssh-keygen
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#testing-in-javascript-python" class="md-nav__link">
     <span class="md-ellipsis">
       Testing in JavaScript &amp; Python
@@ -540,74 +522,6 @@
 
 <div><h1 id="home">Home</h1>
 <p><a class="glightbox" href="https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/bopytest2.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Python Testing with pytest, Second Edition" src="https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/bopytest2.jpg" width="300"></a></p>
-<hr>
-<h2 id="ssh-keygen">ssh-keygen</h2>
-<p>Let's break down the <code>ssh-keygen</code> command and explain each part:</p>
-<div class="language-bash highlight"><span class="filename">bash</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-b<span class="w"> </span><span class="m">4096</span><span class="w"> </span>-C<span class="w"> </span><span class="s2">"your_email@example.com"</span>
-</span></code></pre></div>
-<details class="tip">
-<summary>Breakdown of the Command</summary>
-<ol>
-<li>
-<p><code>ssh-keygen</code>:</p>
-<ul>
-<li>This is the command-line tool used to generate and manage SSH key pairs. It's part of the OpenSSH suite and is available on Linux, macOS, and Windows.</li>
-</ul>
-</li>
-<li>
-<p><code>-t rsa</code>:</p>
-<ul>
-<li>
-<p><strong>Option</strong>: <code>-t</code></p>
-</li>
-<li>
-<p><strong>Purpose</strong>: Specifies the <mark>type of key</mark> to generate. In this case, it's set to <code>rsa</code>, which stands for Rivest-Shamir-Adleman. RSA is a widely used encryption algorithm for secure data transmission.</p>
-</li>
-<li>
-<p><strong>Alternative Types</strong>: Other types include <code>dsa</code>, <code>ecdsa</code>, and <code>ed25519</code>. The choice depends on your security needs and compatibility requirements.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>-b 4096</code>:</p>
-<ul>
-<li>
-<p><strong>Option</strong>: <code>-b</code></p>
-</li>
-<li>
-<p><strong>Purpose</strong>: Specifies the number of bits in the key to create. In this case, it's set to <code>4096</code>, which is considered secure for RSA keys. A larger key size provides stronger encryption but may be slower to generate and use.</p>
-</li>
-<li>
-<p><strong>Default</strong>: The default key size for RSA keys is typically <code>3072</code> bits.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><code>-C "your_email@example.com"</code>:</p>
-<ul>
-<li>
-<p><strong>Option</strong>: <code>-C</code></p>
-</li>
-<li>
-<p><strong>Purpose</strong>: Provides a comment for the key. This comment is appended to the public key and can help identify the key's purpose or owner. In this case, it's set to <code>"your_email@example.com"</code>, which is a common practice to associate the key with your email address.</p>
-</li>
-</ul>
-</li>
-</ol>
-</details>
-<p><strong>What the Command Does</strong></p>
-<p>When you run this command, it generates a new RSA SSH key pair with the following characteristics:</p>
-<ul>
-<li><strong>Key Type</strong>: RSA</li>
-<li><strong>Key Size</strong>: 4096 bits</li>
-<li><strong>Comment</strong>: Your email address</li>
-</ul>
-<p>The command creates two files in the <code>.ssh</code> directory:</p>
-<ul>
-<li><strong>Private Key</strong>: <code>id_rsa</code> (or a custom name if specified with <code>-f</code>)</li>
-<li><strong>Public Key</strong>: <code>id_rsa.pub</code> (or a custom name with <code>.pub</code> extension if specified with <code>-f</code>)</li>
-</ul>
-<p>You will be prompted to enter a passphrase to secure the private key. This is optional but recommended for added security. After generating the key pair, you can use the public key to authenticate with servers or services like GitHub.</p>
 <hr>
 <h2 id="testing-in-javascript-python">Testing in JavaScript &amp; Python</h2>
 <p>When it comes to testing in Python and JavaScript, both languages support various testing frameworks and methodologies like Test-Driven Development (TDD). Here’s a comparison of testing practices in Python and JavaScript:</p>
